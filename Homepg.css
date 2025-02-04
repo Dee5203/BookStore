@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #131921; /* Dark blue background */
+    color: white;
+    padding: 10px;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 5px;
+}
+
+.logo span {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f0c14b; /* Gold color */
+}
+
+.location {
+    font-size: 0.8em;
+}
+
+.search-section {
+    flex-grow: 1;
+    display: flex;
+}
+
+.search-section input {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+}
+
+.search-section button {
+    background-color: #f0c14b; /* Gold color */
+    color: #131921; /* Dark blue text */
+    padding: 8px 12px;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.language img {
+    height: 15px;
+    margin-right: 5px;
+}
+
+.signin, .returns, .cart {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+nav {
+    background-color: #232f3e; /* Slightly lighter blue */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 768px) {
+    .top-nav {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start;
+    }
+    .search-section {
+        margin-top: 10px;
+    }
+    nav ul {
+        flex-wrap: wrap; /* Allow wrapping of navigation items */
+    }
+}
+
+/*drop down list*/
+
+.dropdown {
+    display: none; /* Initially hide the dropdown */
+    position: absolute; /* Position it relative to the parent <li> */
+    background-color: #fff; /* Background color of the dropdown */
+    border: 1px solid #ccc; /* Border for the dropdown */
+    z-index: 1; /* Ensure it's above other content */
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown li {
+    display: block; /* Make list items stack vertically */
+  }
+  
+  .dropdown a {
+    display: block; /* Make links fill the list item width */
+    padding: 10px; /* Add padding to the links */
+    text-decoration: none; /* Remove underlines from links */
+    color: #333; /* Text color */
+  }
+  
+  .dropdown a:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+  }
+  
+  li:hover .dropdown {
+    display: block; /* Show the dropdown when hovering over the parent <li> */
+  }
+
+  /*registration link*/
+
+
