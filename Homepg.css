@@ -1,6 +1,10 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+           
+           
+           
 }
 
 header {
@@ -159,6 +163,24 @@ nav a:hover {
     display: block; /* Show the dropdown when hovering over the parent <li> */
   }
 
-  
+  /*grid*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 3fr); /* 4 equal columns */
+    grid-template-rows: repeat(3, 200px); /* 3 rows, each 150px height */
+    gap: 20px; /* Space between grid items */
+    width: 100%;
+    max-width: 1700px;
+}
+
+.grid-item {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5px;
+}
 
 
