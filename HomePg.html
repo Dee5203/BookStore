@@ -11,11 +11,11 @@
         <div class="top-nav">
             <div class="logo-section">
                 <a href="#" class="logo">
-                    <img src="logo1.jpeg" alt=" Logo"> <span>THE BOOK CLUB</span> 
+                    <img src="logo1.jpeg" alt=" Logo" > <span class="siteName"><h2>THE BOOK CLUB</h2></span> 
                 </a>
-                <span class="location">
+                <!--<span class="location">
                     Delivering to Mumbai 400001 - Update location
-                </span>
+                </span> -->
             </div>
             <div class="search-section">
                 <input type="text" placeholder="Search for Books ">
@@ -31,7 +31,7 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="#" onclick="openPopup()">Login</a></li>
                 <li><a href="registration.html" >Registration</a></li>
                 <li>
                     <a href="#">Genres</a>
@@ -40,7 +40,6 @@
                         <li><a href="#">Fiction</a></li>
                         <li><a href="#">Drama</a></li>
                         <li><a href="#">Sci-Fi</a></li>
-                        <li><a href="#"></a></li>
                         <li><a href="#">Romance</a></li>
                         <li><a href="#">Thriller</a></li>
                         <li><a href="#">Horror</a></li>
@@ -48,30 +47,50 @@
                         <li><a href="#">Historical Fiction</a></li>
                         </ul>
                 </li>
+                <li><a href="#">Students Library</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Engineering</a></li>
+                        <li><a href="#">Medical</a></li>
+                        <li><a href="#">Law</a></li>
+                        <li><a href="#">Buisness</a></li>
+                     
+                        </ul>
+                </li>
                 <li><a href="#">Cart</a></li>
+                
                 
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Popup Login Form -->
+    <div class="popup-overlay" id="loginPopup" onclick="closePopup(event)">
+        <div class="popup-box" onclick="event.stopPropagation();">
+            <button class="close-btn" onclick="closePopup(event)">X</button>
+            <h2>Login</h2>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button class="login-submit">Login</button>
+        </div>
+    </div>
 
         <div class="grid-container">
-            <div class="grid-item"><img src="BooksIMg/AI.jpeg" alt="AI Image" class="grid-image"></div>
-            <div class="grid-item"><img src="BooksIMg/enginn.jpeg" alt="Engineering Image" class="grid-image"></div>
-            <div class="grid-item"> <img src="BooksIMg/Fiction.jpeg" alt="Engineering Image" class="grid-image"></div>
-            <div class="grid-item"> <img src="BooksIMg/Fiction (2).jpeg" alt="Engineering Image" class="grid-image"></div>
-            <div class="grid-item"> <img src="BooksIMg/History.jpeg" alt="Engineering Image" class="grid-image"></div>
-            <div class="grid-item"> <img src="BooksIMg/history2.jpeg" alt="Engineering Image" class="grid-image"></div>
-            <div class="grid-item"> <img src="BooksIMg/Novel.jpeg" alt="Engineering Image" class="grid-image"></div>
-            <div class="grid-item"> <img src="BooksIMg/Novels.jpeg" alt="Engineering Image" class="grid-image"></div>
-            <div class="grid-item"> <img src="BooksIMg/Sci-fi.jpeg" alt="Engineering Image" class="grid-image"></div>
-            <div class="grid-item"> <img src="BooksIMg/Sci-fi2.jpeg" alt="Engineering Image" class="grid-image"></div>
-            <div class="grid-item"> <img src="BooksIMg/Thriller.webp" alt="Engineering Image" class="grid-image"></div>
-            <div class="grid-item"> <img src="BooksIMg/Thriller2.webp" alt="Engineering Image" class="grid-image"></div>
-            <div class="grid-item"> <img src="BooksIMg/Universe.jpeg" alt="Engineering Image" class="grid-image"></div>
-            <div class="grid-item"><img src="BooksIMg/Horror.jpg" alt="Engineering Image" class="grid-image"></div>
-            <div class="grid-item"><img src="BooksIMg/Horror2.webp" alt="Engineering Image" class="grid-image"></div>
+            <div class="grid-item"><img src="BooksIMg/AI.jpeg" alt="AI Image" class="grid-image"> <p class="price">₹ 499</p> </div>
+            <div class="grid-item"><img src="BooksIMg/enginn.jpeg" alt="Engineering Image" class="grid-image"> <p class="price">₹ 599</p></div>
+            <div class="grid-item"> <img src="BooksIMg/Fiction.jpeg" alt="Engineering Image" class="grid-image"> <p class="price">₹ 699</p></div>
+            <div class="grid-item"> <img src="BooksIMg/Fiction (2).jpeg" alt="Engineering Image" class="grid-image"> <p class="price">₹ 399</p></div>
+            <div class="grid-item"> <img src="BooksIMg/History.jpeg" alt="Engineering Image" class="grid-image"> <p class="price">₹ 459</p></div>
+            <div class="grid-item"> <img src="BooksIMg/history2.jpeg" alt="Engineering Image" class="grid-image"><p class="price">₹ 479</p></div>
+            <div class="grid-item"> <img src="BooksIMg/Novel.jpeg" alt="Engineering Image" class="grid-image"><p class="price">₹ 769</p></div>
+            <div class="grid-item"> <img src="BooksIMg/Novels.jpeg" alt="Engineering Image" class="grid-image"><p class="price">₹ 999</p></div>
+            <div class="grid-item"> <img src="BooksIMg/Sci-fi.jpeg" alt="Engineering Image" class="grid-image"><p class="price">₹ 199</p></div>
+            <div class="grid-item"> <img src="BooksIMg/Sci-fi2.jpeg" alt="Engineering Image" class="grid-image"><p class="price">₹ 459</p></div>
+            <div class="grid-item"> <img src="BooksIMg/Thriller.webp" alt="Engineering Image" class="grid-image"><p class="price">₹ 469</p></div>
+            <div class="grid-item"> <img src="BooksIMg/Thriller2.webp" alt="Engineering Image" class="grid-image"><p class="price">₹ 599</p></div>
+            <div class="grid-item"> <img src="BooksIMg/Universe.jpeg" alt="Engineering Image" class="grid-image"><p class="price">₹ 399</p></div>
+            <div class="grid-item"><img src="BooksIMg/Horror.jpg" alt="Engineering Image" class="grid-image"><p class="price">₹ 599</p></div>
+            <div class="grid-item"><img src="BooksIMg/Horror2.webp" alt="Engineering Image" class="grid-image"><p class="price">₹ 569</p></div>
         </div>
         
 
@@ -94,6 +113,16 @@
                &#169; THE BOOK CLUB|All Rights Reserved </p>
         
            </footer>
+           <script>
+            function openPopup() {
+                document.getElementById("loginPopup").style.display = "flex";
+            }
+    
+            function closePopup(event) {
+                document.getElementById("loginPopup").style.display = "none";
+            }
+        </script>
+    
 
          
   
